@@ -1,0 +1,125 @@
+C:\Users\Daniel Godoi\Desktop\Métodos Numéricos\p1>Main.py
+Please, choose one of the options below
+1. Input a new function with the interval and error bounds
+2. Use the default function e^x-4*x^2 and interval (-1, 5)
+Option: 2
+
+f(x) = -4*x**2 + exp(x)
+l = -1.0 u = 5.0
+e_b = 0.0100000000000000
+e_n = 1.00000000000000e-6
+
+Running Bisection Method => find roots
+
+The criteria f(a)*f(b) < 0 were met, proceed
+Trying to find 3 roots as specified
+Found the 3 roots
+r1 is in [-1, 0]
+r2 is in [0, 1]
+r3 is in [4, 5]
+
+Running Bisection Method => approximate roots
+
+Approximating root for r1 [-1, 0]
+i=1 a=-1 b=0 c=-0.5 error=0.5
+i=2 a=-0.5 b=0 c=-0.25 error=0.25
+i=3 a=-0.5 b=-0.25 c=-0.375 error=0.125
+i=4 a=-0.5 b=-0.375 c=-0.4375 error=0.0625
+i=5 a=-0.4375 b=-0.375 c=-0.40625 error=0.03125
+i=6 a=-0.4375 b=-0.40625 c=-0.421875 error=0.015625
+i=7 a=-0.421875 b=-0.40625 c=-0.4140625 error=0.0078125
+
+Criteria met!
+Approximated root is at -0.4140625
+
+
+Approximating root for r2 [0, 1]
+i=1 a=0 b=1 c=0.5 error=0.5
+i=2 a=0.5 b=1 c=0.75 error=0.25
+i=3 a=0.5 b=0.75 c=0.625 error=0.125
+i=4 a=0.625 b=0.75 c=0.6875 error=0.0625
+i=5 a=0.6875 b=0.75 c=0.71875 error=0.03125
+i=6 a=0.6875 b=0.71875 c=0.703125 error=0.015625
+i=7 a=0.703125 b=0.71875 c=0.7109375 error=0.0078125
+
+Criteria met!
+Approximated root is at 0.7109375
+
+
+Approximating root for r3 [4, 5]
+i=1 a=4 b=5 c=4.5 error=0.5
+i=2 a=4 b=4.5 c=4.25 error=0.25
+i=3 a=4.25 b=4.5 c=4.375 error=0.125
+i=4 a=4.25 b=4.375 c=4.3125 error=0.0625
+i=5 a=4.25 b=4.3125 c=4.28125 error=0.03125
+i=6 a=4.28125 b=4.3125 c=4.296875 error=0.015625
+i=7 a=4.296875 b=4.3125 c=4.3046875 error=0.0078125
+
+Criteria met!
+Approximated root is at 4.3046875
+
+
+Running Newton Method => approximate roots
+
+Approximating root for r1=-0.4140625
+k=0
+x_0=-0.4140625
+x_1=-0.407813191367896
+error=0.0153239492110149
+
+k=1
+x_1=-0.407813191367896
+x_2=-0.407776710647253
+error=8.94624918265276e-5
+
+k=2
+x_2=-0.407776710647253
+x_3=-0.407776709404480
+error=3.04767963671763e-9
+
+Criteria met!
+Approximated root is at -0.407776709404480
+
+
+Approximating root for r2=0.7109375
+k=0
+x_0=0.7109375
+x_1=0.714818127709846
+error=0.00542883225734474
+
+k=1
+x_1=0.714818127709846
+x_2=0.714805912483705
+error=1.70888711570049e-5
+
+k=2
+x_2=0.714805912483705
+x_3=0.714805912362778
+error=1.69175279823712e-10
+
+Criteria met!
+Approximated root is at 0.714805912362778
+
+
+Approximating root for r3=4.3046875
+k=0
+x_0=4.3046875
+x_1=4.30658773135614
+error=0.000441238278349147
+
+k=1
+x_1=4.30658773135614
+x_2=4.30658472822821
+error=6.97333994714253e-7
+
+Criteria met!
+Approximated root is at 4.30658472822821
+
+
+Script executed successfully!
+
+Approximated roots for Bisection Method
+[-0.4140625, 0.7109375, 4.3046875]
+
+Approximated roots for Newton Method
+[-0.407776709404480, 0.714805912362778, 4.30658472822821]
